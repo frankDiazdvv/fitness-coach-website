@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+
+}
+
+/* TOP NAV BAR - DESKTOP */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 0 1rem 0 1rem;
+    height: 7rem;
+}
+.nav-logo-container img {
+    width: 8rem;
+    height: auto;
+    padding-top: 1rem;
+}
+
+.nav-desktop-menu {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-desktop-menu a {
+    font-family:'Abel', sans-serif;
+    text-decoration: none;
+    color: rgb(214, 214, 214);
+    font-size: 1.8rem;
+    text-shadow: 1px 1px 1px rgb(126, 126, 126);
+}
+.nav-desktop-menu a:hover {
+    color: white;
+}
+
+/* DASHBOARD AREA */
+.dashboard-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 25rem 25rem;
+    grid-template-areas: 
+    'dash-image title'
+    'dash-image start-now';
+    height: 50rem;
+}
+
+.image-container img {
+    grid-area: dash-image;
+    width: 50rem;
+    height: 40rem;
+    object-fit: cover;
+}
+
+.title-container{
+    grid-area: title;
+}
+
+.title-container img {
+    width: 30rem;
+    padding-left: .5rem;
+}
+
+.ver-planes-container {
+    grid-area: start-now;
+    padding-left: 3rem;
+
+}
+
+.ver-planes-container p {
+    font-family: 'Khand', sans-serif;
+    font-size: 24px;
+    margin: 0;
+}
+
+.ver-planes-container button {
+    height: 4rem;
+    width: 14rem;
+    border-radius: .5rem;
+    border: none;
+    background-color: #FD0400;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Khand', sans-serif;
+    letter-spacing: .2rem;
+}
+
+.ver-planes-container button:hover{
+    background-color: #d10501;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+/* ABOUT ME SECTION */
+
+.about-me-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5rem 1fr;
+    grid-template-areas: 
+    'section-title about-me-img'
+    'about-me-text about-me-img';
+}
+
+.about-me-section h1 {
+    grid-area: section-title;
+    margin-left: 7rem;
+    font-family: 'Khand', sans-serif;
+    font-size: 2.5rem;
+    align-self: end;
+}
+
+.about-me-section p {
+    grid-area: about-me-text;
+    font-size: 1.6rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: italic;
+    margin-left: 7rem;
+    color: #cacaca;
+}
+
+.about-me-section img {
+    grid-area: about-me-img;
+    height: 35rem;
+    width: auto;
+    border-radius: 5%;
+    justify-self: start;
+    align-self: center;
+    margin-left: 10rem;
+    box-shadow: 4px 4px 60px 4px rgb(47, 47, 47);
+}
