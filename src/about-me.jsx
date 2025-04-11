@@ -1,22 +1,67 @@
+import { motion } from 'framer-motion'
+
+const cardVariants = {
+    left: {
+        hidden: { opacity: 0, x:-20 },
+        visible: { opacity: 1, x: 0 },
+    },
+
+    right: {
+        hidden: { opacity: 0, x: 20 },
+        visible: { opacity: 1, x: 0 },
+    }
+}
 
 function AboutMe() {
 
     return(
-        <section className="about-me-section">
-            <h1>ACERCA DE MI</h1>
-            <p>Nací y crecí en Cuba, donde me crie y que no solo me dio mis raíces, sino también el 
-             comienzo de mi gran pasión por el fitness. Fue allí, entre el calor y la energía de la isla, donde
-             descubrí el CrossFit y me enamoré de su intensidad y comunidad. Esa obsesión me ha seguido desde 
-             entonces y la traje conmigo cuando decidí mudarme a España. Ahora, viviendo en Alicante, me dedico 
-             plenamente a lo que amo: ayudar a otros a transformarse a través del movimiento, la técnica adecuada
-             y una buena nutrición. Creo firmemente que el CrossFit es más que un deporte, es un estilo de vida 
-             que combina disciplina, esfuerzo y bienestar. Mi misión es guiarte en tu propio camino, asegurándome
-             de que cada paso que des esté lleno de propósito y resultados. Estoy apasionado por lo que hago y me
-             emociona compartir esta aventura contigo. ¡Bienvenido a mi mundo, donde juntos podemos alcanzar tus 
-             metas de manera saludable y efectiva!
-            </p>
-            <img src="./src/assets/lift-up.jpg" alt="Alberto-Squat" />
-        </section>
+        <motion.section
+            className="about-me-section" 
+            id="about-me-section"
+         >
+            <motion.h1 
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false, amount: .2 }}
+                transition={{ duration: .4, ease: "easeIn" }}
+                variants={cardVariants.left}
+            >ACERCA DE MI
+            </motion.h1>
+            <motion.p 
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false, amount: .2 }}
+                transition={{ duration: .4, ease: "easeIn" }}
+                variants={cardVariants.left}
+            >Mi nombre es Luis Alberto García y desde los 15 años comencé este camino del mundo Fitness. 
+                Llevo años de experiencia como entrenador personal y coach de Crossfit. Siempre me a 
+                apasionado ver a mis clientes lograr sus objetivos , tantos físicos como mentales. Más que 
+                tu entrenador seré tu compañero de viaje. Estás listo?✅ 💪🏻<br/><br/>
+
+                <b>Mis estudios:</b><br/>
+                • Acondicionamiento Físico en Fitness.<br/>
+                • Orthos. <br/>
+                • Real Federación Española de Gimnasia.<br/>
+                • Programa Avanzado en Personal Training
+                Orthos. <br/>
+                • Real Federación Española de Gimnasia.<br/>
+                • Certificado de Profesionalidad Grado C.<br/>
+                • Acondicionamiento Físico en Sala de Entrenamiento
+                Polivalente. <br/>
+                • AFDA0210<br/>
+                • L1 de Crossfit
+            </motion.p>
+            <motion.div 
+                className='about-me-img-container'
+                variants={cardVariants.right}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: false, amount: .2 }}
+                transition={{ duration: .4, ease: "easeIn" }}
+            >
+                <img src="./src/assets/pushing.jpg" alt="Alberto-Squat" />
+            </motion.div>
+        </motion.section>
     )
 }
 

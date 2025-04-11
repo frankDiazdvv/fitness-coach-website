@@ -1,0 +1,386 @@
+@media (min-width: 1600px){
+    .title-container img {
+        width: 40rem;
+        padding-left: 3rem;
+    }
+
+    .ver-planes-container p {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .hamburger-btn {
+        display: none;
+    }
+
+    .side-nav-menu {
+        position: static;
+        width: auto;
+        height: auto;
+        background: none;
+        transform: none;
+        display: flex;
+    }
+
+    .side-nav-menu ul {
+        padding: 0 2rem;
+        display: flex;
+        gap: 20px;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 1100px) {
+    /* PLAN CARDS */
+    .plan-cards-container {
+        gap: 3rem;
+    }
+
+    .plan-cards-container .plan-card {
+        margin-top: 4rem;
+        height: 24rem;
+        width: 19rem;
+    }
+
+    .plan-card ul {
+        margin-top: 1rem;
+    }
+
+    /* CONTACT ME */
+
+    .contact-me-section {
+        gap: 1rem;
+    }
+
+    .contact-me-section .contact-img-container{
+        height: 33rem;
+        width: 33rem;
+    }
+    
+    .contact-me-section .send-message-container {
+        height: 33rem;
+        width: 33rem;
+    }
+
+    .form-message {
+        padding-bottom: 5rem;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    body {
+        padding-top: 6rem;
+    }
+    .navbar{
+        height: 6rem;
+    }
+
+    .nav-logo-container img {
+        width: 8rem;
+    }
+
+    .hamburger-btn {
+        top: 20px;
+    }
+
+    .side-nav-menu {
+        top: 6rem;
+    }
+
+    .dashboard-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: 20rem 15rem;
+        grid-template-areas: 
+        'title'
+        'start-now';
+        background-image: url('./assets/rowing.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 80vh;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .image-container .desktop-dash-img {
+        display: none;
+    }
+
+    .dashboard-section .title-container img {
+        padding: 0;
+    }
+
+    .ver-planes-container {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /* ABOUT ME */
+
+    .about-me-section {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'section-title'
+        'about-me-text';
+        background-image: url('./assets/pushing-dark.jpg');
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+
+    .about-me-img-container img {
+        display: none;
+    }
+
+    .about-me-section h1, 
+    .about-me-section p {
+        padding-top: 2rem;
+        width: 80vw;
+    }
+
+    /* PLAN CARDS */
+
+    .plans-section-container .top-subtitle {
+        font-size: 1.4rem;
+    }
+
+    .plans-section-container .plans-title {
+        font-size: 3.5rem;
+    }
+
+
+    .plan-cards-container {
+        gap: 1rem;
+    }
+
+        /* CONTACT ME */
+
+        .contact-me-section {
+            gap: 1rem;
+        }
+    
+        .contact-me-section .contact-img-container{
+            height: 30rem;
+            width: 30rem;
+        }
+        
+        .contact-me-section .send-message-container {
+            height: 30rem;
+            width: 30rem;
+        }
+    
+        .form-message {
+            padding-bottom: 3rem;
+        }
+
+}
+
+@media (max-width: 950px) {
+    /* PLAN CARDS */
+
+    .plans-section-container .top-subtitle {
+        font-size: 1.3rem;
+    }
+
+    .plans-section-container .plans-title {
+        font-size: 3.2rem;
+    }
+
+     .plans-section-container {
+        height: auto;
+        padding-bottom: 2rem;
+    }
+
+    .plan-cards-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .plan-cards-container .plan-card {
+        height: 25rem;
+        width: 20rem;
+    }
+
+    /* CONTACT ME */
+
+    .contact-me-section .contact-img-container{
+        height: 26rem;
+        width: 26rem;
+    }
+    
+    .contact-me-section .send-message-container {
+        height: 26rem;
+        width: 26rem;
+    }
+
+    .send-message-container h2 {
+        padding: 0;
+        margin-bottom: 0;
+        padding-left: 2rem;
+        font-size: 2rem;
+    }
+
+    .form-message {
+        padding-bottom: 3rem;
+    }
+}
+
+@media (max-width: 850px) {
+    /* CONTACT-ME */
+    .contact-me-section{
+        flex-wrap: wrap;
+    }
+
+    .contact-me-section .contact-img-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 33rem;
+        width: 33rem;
+        background-image: url('./assets/back-dark.jpg');
+        background-position: center;
+        background-size: 100%;
+    }
+
+    .contact-img-container img {
+        display: none;
+    }
+
+    .contact-img-container p {
+        display: flex;
+        text-align: center;
+        font-family: 'Khand', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 500;
+        padding: 1rem;
+    }
+    
+    .contact-me-section .send-message-container {
+        height: 33rem;
+        width: 33rem;
+    }
+
+    .send-message-container h2 {
+        padding: 1rem 0 1rem 2rem;
+        margin-bottom: 1rem;
+        padding-left: 2rem;
+        font-size: 2.3rem;
+    }
+
+    .form-message {
+        padding-bottom: 3rem;
+    }
+}
+
+@media (max-width: 700px) {
+    footer img {
+        width: 15rem;
+    }  
+
+    footer h3 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+   
+    body {
+        padding-top: 4rem;
+    }
+    .navbar{
+        height: 4rem;
+    }
+
+    .nav-logo-container img {
+        width: 6rem;
+        padding: .5rem 0 0 .5rem;
+    }
+
+    .hamburger-btn {
+        top: 0px;
+    }
+
+    .side-nav-menu {
+        top: 4rem;
+    }      
+
+    .dashboard-section {
+        grid-template-rows: 20rem 25rem;
+        height: 100vh; 
+        padding: 0;
+        background-image: url('./assets/espalda.jpg');
+
+    }
+    .dashboard-section .title-container img {
+        width: 25rem;
+    }
+
+    .about-me-section p {
+        font-size: 1.3rem;
+        line-height: 1.2;
+    }
+
+    /* CONTACT ME */
+
+    .contact-me-section{
+        flex-wrap: wrap;
+    }
+
+    .contact-me-section .contact-img-container{
+        height: 30rem;
+        width: 100vw;
+    }
+    
+    .contact-me-section .send-message-container {
+        height: 30rem;
+        width: 100vw;
+    }
+
+    .send-message-container h2 {
+        padding: 1rem 0 1rem 2rem;
+        margin-bottom: 1rem;
+        padding-left: 2rem;
+        font-size: 2.3rem;
+    }
+
+    .form-message {
+        padding-bottom: 3rem;
+    }
+
+    form .submit-form-btn{
+        height: 3rem;
+        width: 15rem;
+    }
+
+    /* FOOTER */
+
+    footer{
+        flex-direction: column;
+    }
+
+    footer img,
+    footer div {
+        padding: .5rem 2rem;
+    }
+
+    footer p {
+        margin: 0;
+    }
+
+    footer img {
+        width: 20rem;
+    }  
+
+    footer h3 {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+   
+}
