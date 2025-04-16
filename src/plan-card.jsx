@@ -25,7 +25,7 @@ function PlanCard({
     type,
 }) {
 
-    const encodedMessage = encodeURIComponent(`Hola, queria preguntarte acerca del plan '${title}'.`);
+    const encodedMessage = encodeURIComponent(`Hola, queria preguntarte acerca del plan '${title}'- ${subtitle}.`);
     const whatsappUrl = `https://wa.me/34624873645?text=${encodedMessage}`;
 
     const variant = cardVariants[type] || cardVariants.center;

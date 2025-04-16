@@ -1,4 +1,6 @@
 import { useRef } from 'react';
+import carrying from './assets/back.jpg';
+
 
 function ContactMe() {
     const form = useRef();
@@ -22,7 +24,7 @@ function ContactMe() {
     return(
         <section className="contact-me-section" id="contact-me-section">
             <div className="contact-img-container">
-                <img src="./src/assets/back.jpg" alt="carrying-in-back" />
+                <img src={carrying} alt="carrying-in-back" />
                 <p>Aquí empieza tu camino. Contáctame Hoy Mismo!</p>
             </div>
             <div className="send-message-container">

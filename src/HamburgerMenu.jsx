@@ -1,9 +1,10 @@
 
-function HamburgerMenu({ menuItems, isOpen, toggleMenu, menuRef }) {
+function HamburgerMenu({ menuItems, isOpen, toggleMenu, menuRef, buttonRef }) {
 
     return (
         <div>
             <button 
+                ref={buttonRef}
                 className={`hamburger-btn ${isOpen ? 'open' : ''}`}
                 onClick={toggleMenu}
             >

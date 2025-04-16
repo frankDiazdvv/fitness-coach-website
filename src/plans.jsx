@@ -24,13 +24,13 @@ function Plans(){
             <div className="plan-cards-container">
                 <PlanCard  
                     title="PONTE EN MARCHA" 
-                    subtitle="Plan Nutricional" 
-                    content={["Acceso ilimitado a entrenamientos en video personalizados.","Sesiones en vivo cada semana."]}
+                    subtitle="Plan Simple de Asesoria" 
+                    content={["Consejos de entrenamiento.","Atención 24/7.", "Corrección de Ejercicios y Alimentación"]}
                     type="left"
                 />
                 <PlanCard  
                     title="TRANSFORMACION TOTAL" 
-                    subtitle="Nutricion + Entrenamiento" 
+                    subtitle="Plan de Entrenamiento" 
                     content={[
                         "Plan de nutrición mensual adaptado a tus objetivos.",
                         "Seguimiento de progreso con análisis detallado y estadísticas."
@@ -40,7 +40,7 @@ function Plans(){
                 />
                 <PlanCard  
                     title="ELITE FITNESS" 
-                    subtitle="Transformacion Completa" 
+                    subtitle="Entrenamiento + Nutrición" 
                     content={[
                         "Acceso ilimitado a entrenamientos en video personalizados.",
                         "Sesiones en vivo cada semana.",

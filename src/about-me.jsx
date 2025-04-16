@@ -1,4 +1,6 @@
 import { motion } from 'framer-motion'
+import ExperienceComponent from './experience-component'
+import pushing from './assets/pushing.jpg'
 
 const cardVariants = {
     left: {
@@ -15,53 +17,57 @@ const cardVariants = {
 function AboutMe() {
 
     return(
-        <motion.section
-            className="about-me-section" 
-            id="about-me-section"
-         >
+        <section className="experience-section" id="experience-section">
             <motion.h1 
+                className='h1-title'
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: false, amount: .2 }}
                 transition={{ duration: .4, ease: "easeIn" }}
                 variants={cardVariants.left}
-            >ACERCA DE MI
+            >CUAL ES MI EXPERIENCIA?
             </motion.h1>
-            <motion.p 
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: false, amount: .2 }}
-                transition={{ duration: .4, ease: "easeIn" }}
-                variants={cardVariants.left}
-            >Mi nombre es Luis Alberto García y desde los 15 años comencé este camino del mundo Fitness. 
-                Llevo años de experiencia como entrenador personal y coach de Crossfit. Siempre me a 
-                apasionado ver a mis clientes lograr sus objetivos , tantos físicos como mentales. Más que 
-                tu entrenador seré tu compañero de viaje. Estás listo?✅ 💪🏻<br/><br/>
-
-                <b>Mis estudios:</b><br/>
-                • Acondicionamiento Físico en Fitness.<br/>
-                • Orthos. <br/>
-                • Real Federación Española de Gimnasia.<br/>
-                • Programa Avanzado en Personal Training
-                Orthos. <br/>
-                • Real Federación Española de Gimnasia.<br/>
-                • Certificado de Profesionalidad Grado C.<br/>
-                • Acondicionamiento Físico en Sala de Entrenamiento
-                Polivalente. <br/>
-                • AFDA0210<br/>
-                • L1 de Crossfit
-            </motion.p>
+            <div className="experience-text-container">
+                <ExperienceComponent
+                    listNumber={"1"}
+                    textContent={"Programa Avanzado en Personal Training de Orthos."}
+                /><br/>
+                <ExperienceComponent
+                    listNumber={"2"}
+                    textContent={"Real Federación Española de Gimnasia."}
+                /><br/>
+                <ExperienceComponent
+                    listNumber={"3"}
+                    textContent={"Título Internacional de Masaje Corporal para Técnicas Generales."}
+                /><br/>
+                <ExperienceComponent
+                    listNumber={"4"}
+                    textContent={"L1 de CrossFit"}
+                />
+            </div>           
             <motion.div 
-                className='about-me-img-container'
+                className='experience-img-container'
                 variants={cardVariants.right}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: false, amount: .2 }}
                 transition={{ duration: .4, ease: "easeIn" }}
             >
-                <img src="./src/assets/pushing.jpg" alt="Alberto-Squat" />
+                <img src={pushing} alt="Alberto-Squat" />
             </motion.div>
-        </motion.section>
+            <a href="#plans-section-container">
+                <motion.button 
+                    className='ver-planes-btn'
+                    variants={cardVariants.right}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: false, amount: .2 }}
+                    transition={{ duration: .4, ease: "easeIn" }}
+                >
+                    VER PLANES    
+                </motion.button>
+            </a>
+        </section>
     )
 }
 

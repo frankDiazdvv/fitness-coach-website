@@ -1,10 +1,11 @@
+import footerLogo from "./assets/footer-logo.png"
 
 function Footer() {
 
     return(
         <footer>
             <a className="footer-img-container" href="#dashboard-section">
-                <img src="./src/assets/footer-logo.png" alt="footer-logo"/>
+                <img src={footerLogo} alt="footer-logo"/>
             </a>
             <div className="contact-info">
                 <h3>CONTACTAME</h3>

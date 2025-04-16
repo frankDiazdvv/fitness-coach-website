@@ -9,7 +9,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
     .hamburger-btn {
         display: none;
     }
@@ -24,7 +24,7 @@
     }
 
     .side-nav-menu ul {
-        padding: 0 2rem;
+        padding: 0 1rem;
         display: flex;
         gap: 20px;
         flex-direction: row;
@@ -32,6 +32,18 @@
 }
 
 @media (max-width: 1100px) {
+    /* STORY SECTION */
+    .my-story-text-container {
+        width: 90vw;
+    }
+    
+    .story-text-title-sentence {
+        padding: 0 4rem;
+    }
+    
+    .story-text-rest {
+        padding: 0 6rem;
+    }
     /* PLAN CARDS */
     .plan-cards-container {
         gap: 3rem;
@@ -70,23 +82,24 @@
 
 @media (max-width: 1000px) {
 
-    body {
-        padding-top: 6rem;
-    }
-    .navbar{
-        height: 6rem;
-    }
+    /* NAV BAR && SIDE NAV BAR */
 
     .nav-logo-container img {
         width: 8rem;
     }
 
     .hamburger-btn {
-        top: 20px;
+        top: 10px;
     }
 
     .side-nav-menu {
-        top: 6rem;
+        top: 5rem;
+        z-index: 1000;
+    }
+
+    .side-nav-menu a {
+        font-size: 1.4rem;
+        padding-left: 1rem;
     }
 
     .dashboard-section {
@@ -112,36 +125,31 @@
         padding: 0;
     }
 
+    .dashboard-section p,
+    .dashboard-section a,
+    .dashboard-section button {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* STORY-SECTION */
+    .my-story-text-container {
+        width: 100vw;
+    }
+    
+    .story-text-title-sentence {
+        padding: 0 3rem;
+    }
+    
+    .story-text-rest {
+        padding: 0 4rem;
+    }
+
     .ver-planes-container {
         padding: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-
-    /* ABOUT ME */
-
-    .about-me-section {
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        'section-title'
-        'about-me-text';
-        background-image: url('./assets/pushing-dark.jpg');
-        background-size: cover;
-        background-position: top;
-        background-repeat: no-repeat;
-        width: 100%;
-    }
-
-    .about-me-img-container img {
-        display: none;
-    }
-
-    .about-me-section h1, 
-    .about-me-section p {
-        padding-top: 2rem;
-        width: 80vw;
     }
 
     /* PLAN CARDS */
@@ -159,25 +167,31 @@
         gap: 1rem;
     }
 
-        /* CONTACT ME */
+    /* BEFORE AND AFTER SECTION */
 
-        .contact-me-section {
-            gap: 1rem;
-        }
+    .before-after-img-container img {
+        width: 15rem;
+    }
+
+    /* CONTACT ME */
+
+    .contact-me-section {
+        gap: 1rem;
+    }
+
+    .contact-me-section .contact-img-container{
+        height: 30rem;
+        width: 30rem;
+    }
     
-        .contact-me-section .contact-img-container{
-            height: 30rem;
-            width: 30rem;
-        }
-        
-        .contact-me-section .send-message-container {
-            height: 30rem;
-            width: 30rem;
-        }
-    
-        .form-message {
-            padding-bottom: 3rem;
-        }
+    .contact-me-section .send-message-container {
+        height: 30rem;
+        width: 30rem;
+    }
+
+    .form-message {
+        padding-bottom: 3rem;
+    }
 
 }
 
@@ -232,6 +246,75 @@
 }
 
 @media (max-width: 850px) {
+
+    /* STORY-SECTION */
+    
+    .story-section img {
+        width: 9rem;
+    }
+    .story-text-title-sentence {
+        font-size: 1.2rem;
+        padding: 0 2rem;
+    }
+    
+    .story-text-rest {
+        font-size: 1rem;
+        padding: 0 2rem;
+    }
+
+    /* EXPERIENCE SECTION */
+
+    .experience-section {
+        display: flex;
+        flex-direction: column;
+        background-image: url('./assets/pushing-dark.jpg');
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+    }
+
+    .experience-section .experience-img-container {
+        display: none;
+    }
+
+    .experience-img-container img {
+        display: none;
+    }
+
+    .experience-section h1 {
+        padding-top: 2rem;
+        width: 100%;
+    }
+
+    .experience-text-container{
+        padding-top: 3rem;
+    }
+
+    .experience-section a {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        margin: 5rem 0;
+    }
+
+    /* BEFORE AND AFTER SECTION */
+
+    .before-after-img-container img {
+        width: 14rem;
+    }
+
+    .before-after-img-container{
+        gap: 1rem;
+    }
+    
+    .before-img-container,
+    .after-img-container {
+        gap: 1rem;
+    }
+
+   
     /* CONTACT-ME */
     .contact-me-section{
         flex-wrap: wrap;
@@ -246,6 +329,7 @@
         background-image: url('./assets/back-dark.jpg');
         background-position: center;
         background-size: 100%;
+        background-repeat: no-repeat;
     }
 
     .contact-img-container img {
@@ -279,6 +363,13 @@
 }
 
 @media (max-width: 700px) {
+   
+    /* BEFORE AND AFTER SECTION */
+    .before-after-img-container img {
+        width: 12rem;
+    }
+
+   /* FOOTER */
     footer img {
         width: 15rem;
     }  
@@ -286,6 +377,8 @@
     footer h3 {
         font-size: 1rem;
     }
+
+    
 }
 
 @media (max-width: 600px) {
@@ -296,11 +389,12 @@
     }
     .navbar{
         height: 4rem;
+        padding: 0 0 .5rem;
+
     }
 
     .nav-logo-container img {
-        width: 6rem;
-        padding: .5rem 0 0 .5rem;
+        width: 7rem;
     }
 
     .hamburger-btn {
@@ -322,15 +416,42 @@
         width: 25rem;
     }
 
-    .about-me-section p {
+    .ver-planes-container p {
+        padding-left: 0;
+    
+    }
+
+    /* EXPERIENCE SECTION */
+    .experience-section p {
         font-size: 1.3rem;
         line-height: 1.2;
     }
+
+    /* BEFORE AND AFTER */
+
+    .before-after-section .top-subtitle {
+        margin: 0;
+    }
+
+    .before-after-img-container img {
+        width: 10rem;
+    }
+
+    .before-after-img-container{
+        gap: .5rem;
+    }
+    
+    .before-img-container,
+    .after-img-container {
+        gap: .5rem;
+    }
+
 
     /* CONTACT ME */
 
     .contact-me-section{
         flex-wrap: wrap;
+        padding: 0 0 7rem 0;
     }
 
     .contact-me-section .contact-img-container{
@@ -363,6 +484,11 @@
 
     footer{
         flex-direction: column;
+    }
+
+    .footer-img-container {
+        display: flex;
+        justify-content: center;
     }
 
     footer img,
