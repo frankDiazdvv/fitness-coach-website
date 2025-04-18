@@ -22,6 +22,7 @@ function PlanCard({
     subtitle = "Subtitle",
     content = ["This Requirement", "Plus this requirement", "This requirement"],
     other,
+    price,
     type,
 }) {
 
@@ -47,6 +48,7 @@ function PlanCard({
                 <li key={index}>{item}</li>
             ))}</motion.ul>
             <motion.p>{other}</motion.p>
+            <p className='price'>DESDE €{price}</p>
             <motion.a href={whatsappUrl}><button className="card-btn">SABER MÁS</button></motion.a>
         </motion.div>
     );

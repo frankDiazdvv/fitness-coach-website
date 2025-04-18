@@ -25,33 +25,41 @@ function Plans(){
                 <PlanCard  
                     title="PONTE EN MARCHA" 
                     subtitle="Plan Simple de Asesoria" 
-                    content={["Consejos de entrenamiento.","Atención 24/7.", "Corrección de Ejercicios y Alimentación"]}
+                    content={[
+                        "Asesoramiento profesional en entrenamiento",
+                        "Atención 24/7 por WhatsApp o Email.", 
+                        "Corrección de Ejercicios y Alimentación"]}
+                    price="19/SESIÓN"
                     type="left"
                 />
                 <PlanCard  
                     title="TRANSFORMACION TOTAL" 
-                    subtitle="Plan de Entrenamiento" 
+                    subtitle="Plan de Entrenamiento Personalizado" 
                     content={[
-                        "Plan de nutrición mensual adaptado a tus objetivos.",
-                        "Seguimiento de progreso con análisis detallado y estadísticas."
+                        "Rutina adaptada a tus metas.",
+                        "Videollamadas personalizadas.",
+                        "Entrenamientos actualizados mensualmente",
+                        "Videos Exclusivos de Ejercicios",
+                        "Seguimiento de progreso con fotos y métricas."
                     ]}
                     other="+ PONTE EN MARCHA"
+                    price="39/MES"
                     type="center"
                 />
                 <PlanCard  
                     title="ELITE FITNESS" 
                     subtitle="Entrenamiento + Nutrición" 
                     content={[
-                        "Acceso ilimitado a entrenamientos en video personalizados.",
-                        "Sesiones en vivo cada semana.",
-                        "Soporte prioritario 24/7 y comunidad exclusiva para miembros Oro."
+                        "Plan de Comidas Personalizado para tu objetivo y requerimientos nutricionales.",
+                        "Consejos de Nutrición Personalizado",
+                        "Sesiones en vivo con entrenamientos especializados."
                     ]}
                     other="+ TRANSFORMACION TOTAL"
+                    price="49/MES"
                     type="right"
 
                 />
             </div>
-
         </section>
     )
 }

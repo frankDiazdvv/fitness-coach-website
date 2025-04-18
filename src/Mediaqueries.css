@@ -51,12 +51,13 @@
 
     .plan-cards-container .plan-card {
         margin-top: 4rem;
-        height: 24rem;
+        height: 30rem;
         width: 19rem;
     }
 
     .plan-card ul {
         margin-top: 1rem;
+        font-size: 1.2rem;
     }
 
     /* CONTACT ME */
@@ -216,8 +217,12 @@
         justify-content: center;
     }
 
+    .plan-card .price {
+        bottom: 5rem;
+    }
+
     .plan-cards-container .plan-card {
-        height: 25rem;
+        height: 28rem;
         width: 20rem;
     }
 
@@ -434,7 +439,7 @@
     }
 
     .before-after-img-container img {
-        width: 10rem;
+        width: 9rem;
     }
 
     .before-after-img-container{
