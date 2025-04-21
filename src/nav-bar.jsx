@@ -42,7 +42,7 @@ function NavBar(){
     return(
         <nav className='navbar'>
             <div className="nav-logo-container">
-                <a href="#dashboard-section">
+                <a href="#top-deal-bar">
                     <img src={logo} alt="1MoreFitness-Logo"/>
                 </a>
             </div>

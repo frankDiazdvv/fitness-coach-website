@@ -6,6 +6,7 @@ import  AboutMe from './about-me'
 import  Plans from './plans'
 import  ContactMe from './contact-me'
 import  Footer from './footer'
+import  TopDeal from './top-deal'
 import BeforeAndAfter from './before-and-after'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <NavBar/>
       </header>
       <main>
+        <TopDeal/>
         <Dashboard/>
         <MyStory/>
         <AboutMe/>

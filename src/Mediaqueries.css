@@ -252,6 +252,11 @@
 
 @media (max-width: 850px) {
 
+    /* TOP-DEAL-BAR */
+    .top-deal-bar {
+        font-size: 1rem;
+    }
+
     /* STORY-SECTION */
     
     .story-section img {
@@ -392,6 +397,12 @@
     body {
         padding-top: 4rem;
     }
+
+    /* TOP-DEAL-BAR */
+    .top-deal-bar {
+        font-size: 1.1rem;
+    }
+
     .navbar{
         height: 4rem;
         padding: 0 0 .5rem;
